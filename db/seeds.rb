@@ -15,7 +15,8 @@ url = "http://tmdb.lewagon.com/movie/top_rated"
 query = URI.open(url).read
 result = JSON.parse(query)
 
-movies = result
+movies = result["results"]
 
-return result
-
+movies.each do |movie|
+  Movie.create(title: movie["title"], overview: movie["overview"], rating: movie["rating"] )
+end
