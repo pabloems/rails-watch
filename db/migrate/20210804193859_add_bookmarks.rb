@@ -1,4 +1,4 @@
-class CreateBookmarks < ActiveRecord::Migration[6.0]
+class AddBookmarks < ActiveRecord::Migration[6.0]
   def change
     create_table :bookmarks do |t|
       t.string :comment

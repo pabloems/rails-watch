@@ -5,6 +5,4 @@ Rails.application.routes.draw do
 
   resources :list ["index", "view", "new", "create"] do
     overview: movie["overview"],
-    
-  end
 end
