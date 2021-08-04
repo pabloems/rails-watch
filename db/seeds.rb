@@ -18,5 +18,6 @@ result = JSON.parse(query)
 movies = result["results"]
 
 movies.each do |movie|
-  Movie.create(title: movie["title"], overview: movie["overview"], rating: movie["rating"] )
+  Movie.create(title: movie["title"], overview: movie["overview"], rating: movie["vote_average"], poster_url: "https://image.tmdb.org/t/p/original#{movie['poster_path']}"
+ )
 end
