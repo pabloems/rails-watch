@@ -5,7 +5,6 @@ class ListsController < ApplicationController
   end
 
   def show
-    @list = List.find(params[:id])
   end
 
   def new
@@ -16,7 +15,7 @@ class ListsController < ApplicationController
     @list = @list.new(list_params)
 
     if @list.save
-      redirect_to @lists, notice: "La lista fue creada"
+      redirect_to list_path(@list), notice: "La lista fue creada"
     else
       render :new
     end
