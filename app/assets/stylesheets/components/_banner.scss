@@ -1,0 +1,16 @@
+.home-banner {
+  background-image: asset-url("banner.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+  align-self: start;
+
+}
+
+.content-banner{
+  margin: 50px;
+  text-align: left ;
+  margin-left: 50px;
+}

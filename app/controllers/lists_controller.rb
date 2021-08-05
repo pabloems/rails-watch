@@ -1,7 +1,9 @@
 class ListsController < ApplicationController
-  before_action :set_list, only[:show]
+
+  before_action :set_list, only: [:show]
+
   def index
-    @list = List.all
+    @lists = List.all
   end
 
   def show
@@ -12,7 +14,7 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = @list.new(list_params)
+    @list = List.new(list_params)
 
     if @list.save
       redirect_to list_path(@list), notice: "La lista fue creada"

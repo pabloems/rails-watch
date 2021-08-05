@@ -17,3 +17,14 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
+
+
+import { initUpdateNavbarOnScroll } from "../components/navbar"
+
+
+
+// AQUÍ SE DEBEN CARGAR LAS FUNCIONES JS
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  initUpdateNavbarOnScroll();
+});

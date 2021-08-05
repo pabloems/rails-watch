@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   #ESTABLECER LISTAS COMO INDEX
   root to: "lists#index"
 
-  resources :list, only: ["index", "show", "new", "create"] do
+  resources :lists, only: ["index", "show", "new", "create"] do
     resources :bookmarks, only: ["new", "create"]
   end
   resources :bookmarks, only: ["destroy"]
