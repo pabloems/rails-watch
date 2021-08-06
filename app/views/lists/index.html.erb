@@ -6,61 +6,15 @@
   </div>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-5 ">
   <h2>Mi Lista</h2>
-  <div class="cards-container d-flex justify-content-between mt-5">
+  <div class="cards-container d-flex justify-content-between mt-5 mb-5 flex-wrap">
     <% @lists.each do |list| %>
       <%= link_to(list_path(list)) do %>
-        <div class="list-card " style = "background-image: url('<%= list.match_url %>')">
-          <p><%= list.name %></p>
+        <div class="list-card mb-5 " style = "background-image: url('<%= list.match_url %>')">
+          <p style="text-align:center"><%= list.name %></p>
         </div>
       <% end %>
     <% end %>
   </div>
 </div>
-
-
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
