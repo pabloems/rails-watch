@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1>Agrega una nueva película a tu lista</h1>
+    <%= simple_form_for [@list, @bookmark] do |element| %>
+    <%= element.association :movie %>
+    <%= element.input :comment %>
+    <%= element.button :submit, class: "btn btn-success"%>
+    <%= link_to  "Atrás", list_path(@list), class: "btn btn-danger" %>
+    <% end %>
+</div>
