@@ -20,6 +20,8 @@ import 'bootstrap';
 
 
 import { initUpdateNavbarOnScroll } from "../components/navbar"
+import { loadDynamicBannerText } from "../components/banner"
+
 
 
 
@@ -27,4 +29,5 @@ import { initUpdateNavbarOnScroll } from "../components/navbar"
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initUpdateNavbarOnScroll();
+  loadDynamicBannerText();
 });
