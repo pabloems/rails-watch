@@ -3,7 +3,7 @@
     <h1>Nueva Lista</h1>
       <%= simple_form_for @list do |lista|%>
       <%= lista.input :name %>
-      <%= lista.input :match_url %>
+      <%= lista.input :photo, as: :file %>
       <%= lista.button :submit, class:"btn btn-success" %>
       <%= link_to  "Back", lists_path, class: "btn btn-danger" %>
       <% end %>
