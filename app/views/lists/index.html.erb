@@ -12,7 +12,7 @@
   <div class="cards-container d-flex justify-content-between mt-5 mb-5 flex-wrap">
     <% @lists.each do |list| %>
       <%= link_to(list_path(list)) do %>
-        <div class="list-card mb-5 " style = "background-image: url('<%= list.match_url %>')">
+        <div class="list-card mb-5 " style = "background-image: url('<%= cl_image_tag list.photo.key, crop: :fill %>')">
           <p style="text-align:center"><%= list.name %></p>
         </div>
       <% end %>
